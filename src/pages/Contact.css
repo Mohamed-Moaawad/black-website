@@ -1,0 +1,220 @@
+.contact{
+    
+}
+
+.contact .header{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 45.19px;
+}
+
+.contact .header .background-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/images/bg-2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.contact .header .text h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+.contact .header .text p{
+    max-width: 50%;
+    color: #b5b5b5;
+    margin: 18px 0;
+}
+
+.contact .header .text a{
+    width: 165px;
+}
+.contact .header .text a:hover{
+    width: 180px;
+}
+
+@media only screen and (max-width: 581px){
+    .contact .header .text h2{
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    .contact .header .text p{
+        max-width: 90%;
+        font-size: 14px;
+        color: #b5b5b5;
+        margin: 18px 0;
+    }
+}
+
+/*==============
+end header 
+===============*/
+/*==============
+start from 
+===============*/
+.contact .from{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    padding: 120px 0;
+}
+
+.contact .from::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background-color: var(--second-bg);
+    z-index: -1;
+    transition: all .9s;
+}
+
+@media only screen and (max-width: 768px){
+	.contact .from::before{
+        width: 100%;
+    }
+    
+}
+
+.contact .from form{
+    width: 100%;
+
+}
+
+.contact .from form h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.9vw;
+}
+
+@media only screen and (max-width: 991px){
+	.contact .from form h3{
+        font-size: 22px;
+    }
+}
+
+.contact .from form p{
+    color: #D9D9D9;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.contact .from form .inp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .from form .inp input{
+    width: 48%;
+    padding: 10px 20px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #8888883a;
+    color: #fff;
+    transition: all .3s;
+}
+
+.contact .from form textarea{
+    width: 100%;
+    margin-top: 35px;
+    padding: 10px 20px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #8888883a;
+    color: #fff;
+    transition: all .3s;
+}
+
+.contact .from form p.error{
+    color: red;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.contact .from form button{
+    padding: 13px 35px;
+    margin-top: 35px;
+    border-radius: 5px;
+    border: 1px solid #8888883a;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    transition: all .3s;
+}
+
+.contact .from form button:hover{
+    transform: scale(1.1);
+}
+
+.contact .from .contact-box{
+    background-color: var(--main-color);
+    padding: 70px 35px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.contact .from .contact-box ul{
+    padding: 0;
+    list-style: none;
+}
+
+.contact .from .contact-box ul li{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.contact .from .contact-box ul li i{
+    font-size: 22px;
+    margin-right: 12px;
+
+}
+
+.contact .from .contact-box ul li h6{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact .from .contact-box ul li p,
+.contact .from .contact-box ul li a{
+    color: #4a4a4a;
+    max-width: 100%;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: .8vw;
+}
+
+.contact .from .contact-box ul li a:hover{
+    color: #000;
+}
+/*==============
+end from 
+===============*/
+/*==============
+start iframe 
+===============*/
+iframe{
+    width: 100%;
+    min-height: 65vh;
+}
+/*==============
+end iframe 
+===============*/

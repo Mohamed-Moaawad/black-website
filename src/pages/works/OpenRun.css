@@ -1,0 +1,267 @@
+
+.open-run .meet{
+    width: 100%;
+    min-height: 50vh;
+    padding: 120px 0;
+}
+
+.open-run .meet .head {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.open-run .meet .head h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.open-run .meet .head p{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 30px 0 50px;
+}
+
+.open-run .meet .title h6 ,
+.open-run .meet .title p
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.open-run .meet .title h6{
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #b4b4b420;
+    padding-bottom: 20px;
+}
+.open-run .meet .title p{
+    color: #b4b4b4;
+    margin: 10px 0;
+}
+/*===========
+end meet 
+=============*/
+
+
+/* ==============
+    start bg-image
+===================*/
+.open-run .bg-image{
+    width: 100%;
+    min-height: 175vh;
+}
+
+.open-run .bg-image .img-bg{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    margin-bottom: 60px;
+}
+
+.open-run .bg-image .img-bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.open-run .bg-image .img-bg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.open-run .bg-image .img-bg span{
+    z-index: 1;
+}
+
+.open-run .bg-image .img{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.open-run .bg-image .img img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.open-run .bg-image .img:hover img{
+    transform: scale(1.1) rotate(2deg);
+}
+
+@media only screen and (max-width: 768px){
+    .open-run .bg-image .img{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .open-run .bg-image .img span.caption{
+        left: 20px ;
+    }
+}
+/* ==============
+    end bg-image
+===================*/
+/* ==============
+    start visual
+===================*/
+
+.visual{
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 0;
+}
+
+.visual .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visual .img{
+    width: 60%;
+    height: 90vh;
+}
+
+.visual .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.visual .box{
+    width: 40%;
+    position: relative;
+}
+
+.visual .box .content{
+    width: 70%;
+    background-color: var(--second-bg);
+    padding: 70px 40px;
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(40%, -50% );
+}
+
+.visual .box h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    border-bottom: 1px solid #565656ae;
+    padding-bottom: 20px;
+}
+
+.visual .box p{
+    color: #b4b4b4;
+    margin: 20px 0;
+}
+
+
+
+
+@media only screen and (max-width: 1465px){
+    .visual .box .content{
+        width: 90%;
+        padding: 70px 40px;
+    }
+}
+@media only screen and (max-width: 1035px){
+    .visual .container-fluid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .visual .box .content{
+        width: 100%;
+        padding: 70px 40px;
+        left: 0%;
+        transform: translate(0%, -50% );
+    }
+    .visual .img{
+        width: 100%;
+    }
+    .visual .box{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+/* ==============
+    end visual
+===================*/
+/* ==============
+    start slider
+===================*/
+.open-run .slider{
+    width: 100%;
+    min-height: 90vh;
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.open-run .container-fluid{
+    position: relative;
+
+}
+
+.open-run .slider .contain{
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: var(--second-bg);
+    padding: 70px 0;
+    padding-left: 70px;
+
+}
+
+
+.open-run .slider .contain .swiper {
+    width: 100%;
+    height: 100%;
+}
+.open-run .slider .contain .swiper-slide {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.open-run .slider .contain .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1150px){
+    .open-run .slider .contain{
+        width: 100%;
+        padding: 70px 40px;
+    }
+    
+}
+/* ==============
+    end slider
+===================*/

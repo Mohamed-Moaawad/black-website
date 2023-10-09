@@ -1,0 +1,71 @@
+/* ==============
+    start meet
+===================*/
+
+.god-chow .meet{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.god-chow .meet .title h6 ,
+.god-chow .meet .title p
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.god-chow .meet .title h6{
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #b4b4b420;
+    padding-bottom: 20px;
+}
+.god-chow .meet .title p{
+    color: #b4b4b4;
+    margin: 10px 0;
+}
+/* ==============
+    end meet
+===================*/
+/* ==============
+    start images-dogs
+===================*/
+.images-dogs{
+    width: 100%;
+    min-height: 300vh;
+    
+}
+
+.images-dogs .img-dog{
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.images-dogs .img-dog_1{
+    z-index: 1;
+}
+.images-dogs .img-dog_2{
+    z-index: 2;
+}
+.images-dogs .img-dog_3{
+    z-index: 3;
+}
+.images-dogs .img-dog_4{
+    z-index: 4;
+}
+
+.images-dogs .img-dog img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+/* ==============
+    end images-dogs
+===================*/

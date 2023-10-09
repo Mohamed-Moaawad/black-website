@@ -1,0 +1,86 @@
+.team-images{
+    width: 100%;
+
+}
+
+
+
+.team-images .box-image{
+    width: 100%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.team-images .box-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s;
+}
+
+.team-images .box-image:hover img{
+    transform: scale(1.1);
+}
+
+.team-images .box-image .text{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #0000001e;
+    backdrop-filter: blur(2px);
+    border-top: 1px solid #ffffff32;
+    cursor: pointer;
+}
+
+.team-images .box-image .text h5{
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+}
+.team-images .box-image .text p{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5px 0;
+    transition: all .3s;
+}
+
+.team-images .box-image .text .icons{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.team-images .box-image .text .icons .icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #6363636b;
+    margin-left: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-images .box-image .text .icons .icon i{
+    color: #fff;
+
+}
+
+.team-images .box-image .text:hover p{
+    transform: translateY(-5px);
+    opacity: 0;
+}
+
+.team-images .box-image .text:hover .icons{
+    transform: translateY(-5px);
+    opacity: 1;
+}

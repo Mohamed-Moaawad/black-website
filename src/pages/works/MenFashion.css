@@ -1,0 +1,381 @@
+.men-fashion{
+
+}
+
+.men-fashion .header{
+    width: 100%;
+    min-height: calc(100vh - 45.19px);
+    margin-top: 45.19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.men-fashion .header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--second-bg);
+    z-index: -1;
+}
+
+.men-fashion .header .content{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.men-fashion .header .text{
+    width: 50%;
+    height: 100%;
+}
+
+.men-fashion .header .text h6{
+    color: #d5d5d5;
+    text-transform: capitalize;
+
+}
+
+.men-fashion .header .text h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.men-fashion .header .text p{
+    color: #d5d5d5;
+    text-transform: capitalize;
+
+}
+
+.men-fashion .header .text p span{
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.men-fashion .header .img{
+    width: 50%;
+    height: 90%;
+    position: relative;
+}
+
+.men-fashion .header .img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.men-fashion .header .img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+    .men-fashion .header .text{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .men-fashion .header .img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .men-fashion .header .text{
+        position: relative;
+        z-index: 1;
+    }
+    .men-fashion .header .text h2{
+        font-size: 11vw;
+    }
+}
+
+
+/* ==============
+    end header
+===================*/
+/* ==============
+    start meet
+===================*/
+
+.men-fashion .meet{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.men-fashion .meet .title h6 ,
+.men-fashion .meet .title p
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.men-fashion .meet .title h6{
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #b4b4b420;
+    padding-bottom: 20px;
+}
+.men-fashion .meet .title p{
+    color: #b4b4b4;
+    margin: 10px 0;
+}
+/* ==============
+    end meet
+===================*/
+/* ==============
+    start bg-image
+===================*/
+.men-fashion .bg-image{
+    width: 100%;
+    min-height: 175vh;
+}
+
+.men-fashion .bg-image .img-bg{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    margin-bottom: 60px;
+}
+
+.men-fashion .bg-image .img-bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.men-fashion .bg-image .img-bg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
+.men-fashion .bg-image .img-bg span{
+    z-index: 1;
+}
+
+.men-fashion .bg-image .img{
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.men-fashion .bg-image .img img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.men-fashion .bg-image .img:hover img{
+    transform: scale(1.1) rotate(2deg);
+}
+
+@media only screen and (max-width: 768px){
+    .men-fashion .bg-image .img{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .men-fashion .bg-image .img span.caption{
+        left: 20px ;
+    }
+}
+/* ==============
+    end bg-image
+===================*/
+/* ==============
+    start visual
+===================*/
+
+.visual{
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 0;
+}
+
+.visual .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visual .img{
+    width: 60%;
+    height: 90vh;
+}
+
+.visual .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.visual .box{
+    width: 40%;
+    position: relative;
+}
+
+.visual .box .content{
+    width: 70%;
+    background-color: var(--second-bg);
+    padding: 70px 40px;
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(40%, -50% );
+}
+
+.visual .box h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    border-bottom: 1px solid #565656ae;
+    padding-bottom: 20px;
+}
+
+.visual .box p{
+    color: #b4b4b4;
+    margin: 20px 0;
+}
+
+.visual .box ul{
+    padding: 0;
+    list-style: none;
+}
+
+.visual .box ul li {
+    background-color: var(--main-bg);
+    padding: 8px 15px;
+    margin: 15px 0;
+}
+
+.visual .box ul li i{
+    color: #fff;
+    margin-right: 15px;
+}
+
+.visual .box ul li span{
+    color: #fff;
+}
+
+@media only screen and (max-width: 1465px){
+    .visual .box .content{
+        width: 90%;
+        padding: 70px 40px;
+    }
+}
+@media only screen and (max-width: 1035px){
+    .visual .container-fluid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .visual .box .content{
+        width: 100%;
+        padding: 70px 40px;
+        left: 0%;
+        transform: translate(0%, -50% );
+    }
+    .visual .img{
+        width: 100%;
+    }
+    .visual .box{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+/* ==============
+    end visual
+===================*/
+/* ==============
+    start slider
+===================*/
+.men-fashion .slider{
+    width: 100%;
+    min-height: 90vh;
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.men-fashion .container-fluid{
+    position: relative;
+
+}
+
+.men-fashion .slider .contain{
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: var(--second-bg);
+    padding: 70px 0;
+    padding-left: 70px;
+
+}
+
+
+.men-fashion .slider .contain .swiper {
+    width: 100%;
+    height: 100%;
+}
+.men-fashion .slider .contain .swiper-slide {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.men-fashion .slider .contain .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1150px){
+    .men-fashion .slider .contain{
+        width: 100%;
+        padding: 70px 40px;
+    }
+    
+}
+/* ==============
+    end slider
+===================*/

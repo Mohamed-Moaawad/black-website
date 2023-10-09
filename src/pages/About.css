@@ -1,0 +1,359 @@
+.about{
+    
+}
+
+.about .header{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 45.19px;
+}
+
+.about .header .background-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/images/bg-2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.about .header .text h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+.about .header .text p{
+    max-width: 50%;
+    color: #b5b5b5;
+    margin: 18px 0;
+}
+
+.about .header .text a{
+    width: 165px;
+}
+.about .header .text a:hover{
+    width: 180px;
+}
+
+@media only screen and (max-width: 581px){
+    .about .header .text h2{
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    .about .header .text p{
+        max-width: 90%;
+        font-size: 14px;
+        color: #b5b5b5;
+        margin: 18px 0;
+    }
+}
+
+/*==============
+end header 
+===============*/
+/*==============
+start img-head-phone 
+===============*/
+.about .img-head-phone{
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+}
+
+.about .img-head-phone img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.about .img-head-phone .text-box{
+    background-color: #E4E4DD;
+    width: 50%;
+    text-align: center;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -150px;
+}
+
+.about .img-head-phone .text-box h4{
+    max-width: 70%;
+    font-size: 33px;
+}
+.about .img-head-phone .text-box p{
+    max-width: 70%;
+    font-size: 14px;
+    color: #828282;
+}
+
+@media only screen and (max-width: 991px){
+    .about .img-head-phone .text-box{
+        width: 90%;
+    }
+	.about .img-head-phone .text-box h4{
+        max-width: 100%;
+        font-size: 2vw;
+    }
+	.about .img-head-phone .text-box p{
+        max-width: 100%;
+        font-size: 1.2vw;
+    }
+}
+
+/*==============
+end img-head-phone 
+===============*/
+/*==============
+start advantages
+===============*/
+.advantages{
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 0;
+}
+
+.advantages .header-text{
+    margin-top: 130px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.advantages .header-text h6{
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+
+}
+
+.advantages .header-text h6 span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 8px;
+}
+
+.advantages .header-text h3{
+    color: #fff;
+    font-size: 35px;
+}
+
+
+.advantages .item{
+    border: 1px solid #dddddd17;
+    padding: 60px 30px;
+    transition: all .5s;
+}
+
+.advantages .item-icon{
+    width: 100%;
+    border-bottom: 1px solid #dddddd38;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.advantages .item .item-icon i{
+    font-size: 60px;
+    color: var(--main-color);
+}
+
+.advantages .item .item-icon h5{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.advantages .item .item-icon h3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 105px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px #dddddd19;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.advantages .item .item-text{
+    padding: 12px 0;
+}
+
+.advantages .item .item-text p{
+    color: #878787;
+    font-size: 14px;
+}
+
+.advantages .item .item-text a{
+    width: 130px;
+}
+
+.advantages .item .item-text a:hover{
+    width: 150px;
+}
+
+@media only screen and (max-width: 991px){
+    .advantages .item-tow,
+    .advantages .item-three{
+        margin-top: 0px;
+    }
+    .advantages .heade-text .text h3{
+        font-size: 30px;
+    }
+
+}
+/*==============
+end advantages 
+===============*/
+/*==============
+start team-image
+===============*/
+.team-image{
+    width: 100%;
+    min-height: 90vh;
+    padding: 120px 0;
+    background-color: var(--second-bg);
+}
+
+.team-image .header-text{
+    margin-bottom: 40px;
+}
+
+.team-image .header-text h6{
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.team-image .header-text h6 span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 8px;
+}
+
+.team-image .header-text h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 35px;
+}
+/*==============
+end team-image
+===============*/
+/*==============
+start slide-team
+===============*/
+.slide-team{
+    width: 100%;
+    min-height: 70vh;
+    padding: 120px 0;
+}
+
+.slide-team .header-text{
+    text-align: center;
+}
+
+.slide-team .header-text h6{
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-team .header-text h6 span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 8px;
+}
+
+.slide-team .header-text h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 35px;
+}
+/*==============
+end slide-team
+===============*/
+/*==============
+start images-brand
+===============*/
+.images-brand{
+    width: 100%;
+    min-height: 60vh;
+    padding: 120px 0;
+}
+
+.images-brand .header-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.images-brand .header-text h6{
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images-brand .header-text h6 span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 8px;
+}
+
+.images-brand .header-text h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 35px;
+}
+
+.images-brand .brand{
+    width: 100%;
+    padding: 65px 50px;
+    border: 1px solid #5555552e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*==============
+end images-brand
+===============*/
+
+
+.about footer{
+    background-color: var(--second-bg) ;
+}

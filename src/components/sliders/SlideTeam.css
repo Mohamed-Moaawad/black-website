@@ -1,0 +1,81 @@
+.slide-team {
+    margin-top: 50px;
+}
+
+.slide-team .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-team .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .slide-team .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.slide-team .swiper-slide .card-box{
+    width: 100%;
+    padding: 35px 25px;
+    border: 1px solid #ffffff1a;
+}
+
+.slide-team .swiper-slide .card-box .text{
+    border-bottom: 1px solid #ffffff1a;
+    padding-bottom: 15px;
+}
+
+.slide-team .swiper-slide .card-box .text p{
+    font-size: .7vw;
+    color: #eee;
+    line-height: 1.7;
+}
+
+.slide-team .swiper-slide .card-box .acount{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.slide-team .swiper-slide .card-box .acount img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.slide-team .swiper-slide .card-box .acount .name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slide-team .swiper-slide .card-box .acount .name h6{
+    margin: 0;
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.slide-team .swiper-slide .card-box .acount .name span{
+    margin: 0;
+    color: #9a9a9a;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+@media only screen and (max-width: 768px){
+	.slide-team .swiper-slide{
+        width: 100% !important;
+    }
+}

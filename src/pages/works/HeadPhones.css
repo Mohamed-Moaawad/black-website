@@ -1,0 +1,185 @@
+.headphones{
+
+}
+
+.headphones .meet{
+    width: 100%;
+    min-height: 50vh;
+    padding: 120px 0;
+}
+
+.headphones .meet .head {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.headphones .meet .head h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.headphones .meet .head p{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 30px 0 50px;
+}
+
+.headphones .meet .title h6 ,
+.headphones .meet .title p
+{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.headphones .meet .title h6{
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 1px solid #b4b4b420;
+    padding-bottom: 20px;
+}
+.headphones .meet .title p{
+    color: #b4b4b4;
+    margin: 10px 0;
+}
+/*===========
+end meet 
+=============*/
+
+/* =============
+start glasses 
+===============*/
+.headphones .glasses{
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 0;
+    position: relative;
+}
+
+.headphones .glasses::before{
+    content: "";
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+
+@media only screen and (max-width: 768px){
+    .headphones .glasses{
+        min-height: 50vh;
+    }
+    .headphones .glasses::before{
+        height: 75%;
+    }
+}
+
+.headphones .glasses .content{
+    width: 90%;
+    margin: auto;
+
+}
+
+.glasses .content .video img{
+    width: 100%;
+}
+
+.headphones .glasses .content .text{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headphones .glasses .content .text p{
+    text-align: center;
+    max-width: 50%;
+    font-size: 25px;
+    color: #fff;
+}
+
+.headphones .imgs{
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 120px;
+}
+
+.headphones .imgs .container-fluid{
+    width: 90%;
+    margin: auto;
+}
+
+.headphones .imgs .img {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.headphones .imgs .img-one{
+    width: 100%;
+    height: 80vh;
+}
+.headphones .imgs  .img-two{
+    width: 100%;
+    height: 90vh;
+}
+
+.headphones .imgs .img img{
+    width: 100%;
+    height: auto;
+    transition: all .5s;
+}
+
+.headphones .imgs .img:hover img{
+    transform: scale(1.1) rotate(2deg);
+}
+
+.headphones .imgs .img-lg{
+    width: 100%;
+    height: 90vh;
+    margin-top: 120px;
+    position: relative;
+}
+
+.headphones .imgs .img-lg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.headphones .imgs .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.headphones .imgs .text p{
+    text-align: center;
+    max-width: 50%;
+    color: #b4b4b4;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.headphones .imgs .text h5{
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .headphones .imgs .text p{
+        max-width: 100%;
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,114 @@
+
+.links-social-media{
+    position: fixed;
+    left: 35px;
+    bottom: 15%;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-social-media .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-social-media .icons .icon{
+    margin: 5px 0;
+}
+
+.links-social-media .icons .icon a{
+    color: #fff;
+    position: relative;
+}
+
+.links-social-media .icons .icon a i{
+    font-size: 13px;
+}
+
+.links-social-media .icons .icon a span{
+    position: absolute;
+    left: 0px;
+    letter-spacing: -8px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.links-social-media .icons .icon:hover span{
+    left: 15px;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.links-social-media span.line{
+    width: 1px;
+    height: 60px;
+    background-color: #fff;
+}
+
+.links-social-media p{
+    color: #fff;
+    transform: rotate(90deg);
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1000px){
+	.links-social-media{
+        display: none;
+    }
+}
+/* ========== 
+end landing 
+============= */
+/* ========== 
+start sec-icon 
+============= */
+.sec-iocns{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.sec-iocns .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.sec-iocns .tow{ 
+    border-left: 1px solid #dddddd6e;
+}
+
+.sec-iocns .icon i{
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.sec-iocns .icon .text{
+    margin-left: 15px;
+}
+
+.sec-iocns .icon .text h5{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sec-iocns .icon .text p{
+    text-transform: capitalize;
+    color: #a1a1a1;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 991px){
+    .sec-iocns .tow{ 
+        border: none;
+    }
+}
