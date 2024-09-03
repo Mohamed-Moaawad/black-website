@@ -21,7 +21,7 @@ import SocialMediaLinks from '../components/SocialMediaLinks';
 import Preloader from '../components/Preloader';
 import BtnToUp from '../components/BtnToUp';
 
-
+ 
 
 
 const Home = () => {
